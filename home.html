@@ -1,0 +1,98 @@
+{% extends "layout.html" %}
+{% block content %}
+  <!--Page Header -->
+  <body>
+    <hr>
+      <section id="introduction">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3 mr-auto">
+              <img class="rounded-circle account-img" src="{{ url_for('static', filename='profile_pic.jpg') }}" width=240 height=240>
+              <p><h3 class="account-heading">Benjamin Chew</h3></p>
+              <p class="text-center">Tech Enthusiast and Aspiring Entrepreneur</p>
+            </div>
+            <div id="about" class="col-lg-8">
+              <h1>About Me</h1>
+              <p>
+                Hey there! I'm currently a student in the NTU Renaissance Engineering Programme specialising in computer engineering.
+                I strongly believe in the power of fusing technology and domain knowledge expertise to bring great change to the world.
+                Current main area of interest is deep learning, but I'm excited about the possibilities of 3D printing and embedded systems too!
+                I hope to start my own business in future.
+              </p>
+            </div>
+          </div>
+        </section>
+      </hr>
+
+  <!-- Main Content -->
+  <hr>
+    <section id="achievements">
+      </br></br><div class="container">
+        <div class="row">
+          <div class="col-lg-3">
+            <h2>Achievements</h2>
+          </div>
+          <div class="col-lg-9 offset-md-6">
+            <span class="border border-secondary">
+              <h3>1st place at NTU IEEE v6.0 Hackathon</h3>
+              <p>Date posted: Sept 2019</p>
+              <p>
+                Won my first hackathon with a device made using Android Studios, Tensorflow Lite and Arduino!
+              </p>
+              <a href="./achievement1.html">
+                <button type="button" class="btn btn-info">
+                  Learn more
+                </button>
+              </a>
+            </span>
+            <span class="border border-secondary">
+              <h3>2nd place at Edelman EPIC Data Challenge</h3>
+              <p>Date posted: Nov 2019</p>
+            </span>
+            <span class="border border-secondary">
+              <h3>2nd place at Shell: Imagine the Future Scenarios Competition</h3>
+              <p>Date posted: Jan 2020</p>
+            </span>
+          </div>
+        </div>
+      </div>
+    </hr>
+
+  <hr>
+    <section id="projects">
+      </br></br><div class="container">
+        <div class="row">
+          <div class="col-lg-3">
+            <h2>Projects</h2>
+          </div>
+          <div class="col-lg-9 offset-md-6">
+            <ul style="list-style-type:none;">
+              <li>Post 1</li>
+              <li>Post 2</li>
+              <li>Post 3</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </hr>
+
+  <hr>
+    <section id="blog_posts">
+      </br></br><div class="container">
+        <div class="row">
+          <div class="col-lg-3">
+            <h2>Posts</h2>
+          </div>
+          <div class="col-lg-9 offset-md-6">
+            <ul style="list-style-type:none;">
+              <li>Post 1</li>
+              <li>Post 2</li>
+              <li>Post 3</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </body>
+  </hr>
+
+{% endblock content %}

@@ -1,0 +1,25 @@
+{% extends "layout.html" %}
+{% block content %}
+  <!--Page Header -->
+  <hr>
+    <h3>1st place at NTU IEEE v6.0 Hackathon</h3>
+    <p>Date posted: Sept 2019</p>
+    <p>
+      This was my first hackathon, so it was quite a novel experience for me and my team to churn out a prototype in 24 hours.
+      We built Litebox, an Android application paired with a controlled light box that could detect if a plate was clean or dirty.
+      We used Android Studios, Tensorflow Lite and Arduino with an ultrasonic sensor to bring the idea to life.
+      I was personally involved in data collection, model training (fine-tuning) and integration with the application. I was pleased as it was my first time
+      training and deploying a CNN model for a serious application.
+    </p>
+    <p>
+      Although we won first place, there were improvements to be made.
+      Firstly, the model was not sufficiently robust even under the controlled environment of the light box. This was likely due to a miserly
+      dataset. Secondly, the prototype was very crude as we only had 24 hours to build it, and hence the components were shabbily integrated.
+      Given time, we would have used a full on-device solution, perhaps using a Raspberry Pi instead, potentially adding more sensors or an ArduCam,
+      and allowing for on device inference instead.
+
+    </p>
+    <button type="button" class="btn btn-info">
+      <a href="https://github.com/Benjamintdk/LiteBox" target="_blank">Learn more</a>
+    </button>
+  </hr>
